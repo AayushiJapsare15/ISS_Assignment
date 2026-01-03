@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form id="regForm" onsubmit="return validateForm()">
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter full name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <label>Password</label>
+        <input type="password" id="password">
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+
+        <label>Age</label>
+        <input type="number" id="age">
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <label>Skills</label>
+        <div class="checkbox-group">
+            <input type="checkbox" value="Java"> Java
+            <input type="checkbox" value="Python"> Python
+            <input type="checkbox" value="Web"> Web
+        </div>
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">--Select Course--</option>
+            <option>Computer Science</option>
+            <option>Data Science</option>
+            <option>IT</option>
+        </select>
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob">
+
+        <label>Address</label>
+        <textarea id="address"></textarea>
+
+        <label>
+            <input type="checkbox" id="terms"> I agree to terms & conditions
+        </label>
+
+        <button type="submit">Register</button>
+
+        <p id="error"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

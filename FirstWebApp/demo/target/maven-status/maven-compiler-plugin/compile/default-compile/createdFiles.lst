@@ -1,0 +1,5 @@
+com\example\HelloServlet.class
+com\example\LoginServlet.class
+com\example\RegisterServlet.class
+com\example\LogoutServlet.class
+com\example\App.class

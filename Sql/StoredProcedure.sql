@@ -1,0 +1,8 @@
+DELIMITER //
+
+CREATE PROCEDURE getStudentById(IN sid INT)
+BEGIN
+    SELECT * FROM student WHERE id = sid;
+END //
+
+DELIMITER ;
